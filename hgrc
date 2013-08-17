@@ -1,0 +1,26 @@
+[ui]
+username = Crossle Song <crosslesong@gmail.com>
+
+[ui]
+ssh = ssh -C
+
+[extensions]
+bookmarks =
+
+[bookmarks]
+track.current = True
+
+[extensions]
+hgext.graphlog =
+
+[extensions]
+color =
+
+[extensions]
+hgext.mq =
+
+[extensions]
+record =
+
+[extensions]
+rebase =

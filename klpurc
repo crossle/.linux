@@ -1,0 +1,41 @@
+
+# environment
+export JAVA_HOME=/usr/lib/jvm/java-6-oracle
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export ANDROID_HOME=$HOME/Tools/adt-bundle-linux/sdk
+export ANDROID_NDK=$HOME/Tools/android-ndk
+export ANDROID_NDK_ROOT=$ANDROID_NDK
+export ANDROID_SDK=$HOME/Tools/adt-bundle-linux/sdk
+export GRADLE_HOME=$HOME/Tools/gradle-1.7
+export ANDROID_STUDIO=$HOME/Tools/android-studio
+export ECLIPSE=$HOME/Tools/adt-bundle-linux/eclipse
+
+export PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_SDK/build-tools/18.0.1:$ANDROID_NDK/:$GRADLE_HOME/bin:$ANDROID_STUDIO/bin:$ECLIPSE:/home/le/Code/sample/pidcat
+
+export EDITOR=vim
+export NDK_CCACHE=ccache
+export USE_CCACHE=1
+export ANDROID_ABI=armeabi-v7a
+
+# dict jianbing.org on dns
+t ()
+{
+  dig "$*.jianbing.org" +short txt | perl -pe's/\\(\d{1,3})/chr $1/eg; s/(^"|"$)//g'
+}
+
+# . /usr/share/autojump/autojump.sh
+
+# remember last directory
+LAST_DIR=$HOME/.cache/last_dir
+function cd()
+{
+  builtin cd "$@"
+  pwd > $LAST_DIR
+}
+[ -f $LAST_DIR ] && cd `cat $LAST_DIR`
+
+alias v='vim'
+alias vi='vim'
+alias clip='xclip -sel clip'
+alias http="ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => Dir.pwd).start'"
+

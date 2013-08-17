@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ln -s bashrc ~/.bashrc
+ln -s zshrc ~/.zshrc
+ln -s hgrc ~/.hgrc
+ln -s gitconfig ~/.gitconfig
+ln -s klpurc ~/.klpurc
+ln -s xinitrc ~/.xinitrc
+ln -s Xresources ~/.Xresources
+ln -s Xmodmap ~/.Xmodmap
