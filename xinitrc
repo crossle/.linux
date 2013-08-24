@@ -8,7 +8,7 @@ PATH=~/.bin:~/.xmonad/:~/.cabal/bin:$PATH
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 xsetroot -cursor_name left_ptr &
 xscreensaver -no-splash &
-xcalib ~/MacOSXColor.icc
+xcalib ~/.linux/MacOSXColor.icc
 feh --bg-fill -z ~/Pictures/Wallpapers/6.jpg
 
 # Start GNOME Keyring
