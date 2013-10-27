@@ -1,9 +1,12 @@
+-- xmobar config used by Vic Fryzel
+-- Author: Vic Fryzel
+-- http://github.com/vicfryzel/xmonad-config
 
 Config {
     font = "xft:WenQuanYi Micro Hei Mono:size=8:antialias=true",
     bgColor = "#000000",
     fgColor = "#ffffff",
-    position = Static { xpos = 0, ypos = 0, width = 1160, height = 12 },
+    position = Static { xpos = 0, ypos = 0, width = 1180, height = 12 },
     lowerOnStart = True,
     commands = [
         Run MultiCpu ["-t","CPU: <total0> <total1> <total2> <total3>","-L","30","-H","60","-h","#FFB6B0","-l","#CEFFAC","-n","#FFFFCC"] 10,
