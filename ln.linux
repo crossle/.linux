@@ -6,5 +6,8 @@ ln -s hgrc ~/.hgrc
 ln -s gitconfig ~/.gitconfig
 ln -s klpurc ~/.klpurc
 ln -s xinitrc ~/.xinitrc
-ln -s Xresources ~/.Xresources
+ln -s Xdefaults ~/.Xdefaults
 ln -s Xmodmap ~/.Xmodmap
+
+ln -s bin ~/.bin
+ln -s xmonad ~/.xmonad

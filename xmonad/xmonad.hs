@@ -57,6 +57,7 @@ myManageHook = composeAll
     , stringProperty "WM_NAME" =? "ncmpc"     --> doShift "5:Music"
     , className =? "MPlayer"                  --> doShift "6:Video"
     , className =? "Pidgin"                   --> doShift "7:Chat"
+    , className =? "Skype"                    --> doShift "7:Chat"
     , className =? "Gimp"                     --> doShift "8:Art"
     , isFullscreen                            --> (doF W.focusDown <+> doFullFloat)]
 
@@ -134,7 +135,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Launch dmenu via yeganesh.
   -- Use this to launch programs without a key binding.
   , ((modMask, xK_p),
-     spawn "exe=`dmenu_path_c | yeganesh` && eval \"exec $exe\"")
+     spawn "exe=`dmenu -c | yeganesh` && eval \"exec $exe\"")
 
   -- Take a screenshot in select mode.
   -- After pressing this key binding, click a window, or draw a rectangle with
@@ -321,7 +322,7 @@ myStartupHook = return ()
 -- Run xmonad with all the defaults we set up.
 --
 main = do
-  xmproc <- spawnPipe "/usr/local/bin/xmobar ~/.xmonad/xmobar.hs"
+  xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmonad/xmobar.hs"
   xmonad $ defaults {
       logHook = dynamicLogWithPP $ xmobarPP {
             ppOutput = hPutStrLn xmproc
