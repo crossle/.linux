@@ -1,13 +1,13 @@
 #!/bin/sh
 
-ln -s bashrc ~/.bashrc
-ln -s zshrc ~/.zshrc
-ln -s hgrc ~/.hgrc
-ln -s gitconfig ~/.gitconfig
-ln -s klpurc ~/.klpurc
-ln -s xinitrc ~/.xinitrc
-ln -s Xdefaults ~/.Xdefaults
-ln -s Xmodmap ~/.Xmodmap
+ln -s ~/.linux/bashrc ~/.bashrc
+ln -s ~/.linux/zshrc ~/.zshrc
+ln -s ~/.linux/hgrc ~/.hgrc
+ln -s ~/.linux/gitconfig ~/.gitconfig
+ln -s ~/.linux/klpurc ~/.klpurc
+ln -s ~/.linux/xinitrc ~/.xinitrc
+ln -s ~/.linux/Xdefaults ~/.Xdefaults
+ln -s ~/.linux/Xmodmap ~/.Xmodmap
 
-ln -s bin ~/.bin
-ln -s xmonad ~/.xmonad
+ln -s ~/.linux/bin ~/.bin
+ln -s ~/.linux/xmonad ~/.xmonad

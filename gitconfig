@@ -1,9 +1,9 @@
-[user]
-  name = Crossle Song
-	email = sxm@yixia.com
 [color]
   ui = auto
   interactive = auto
+[user]
+  name = Crossle Song
+	email = sxm@yixia.com
 [core]
   editor = vim
 [repack]
