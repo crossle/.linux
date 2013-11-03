@@ -30,15 +30,14 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'godlygeek/csapprox'
 NeoBundle 'Rykka/colorv.vim'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'Lokaltog/vim-powerline', 'develop'
-NeoBundle 'osyo-manga/vim-powerline-unite-theme'
+NeoBundle 'itchyny/lightline.vim'
 " Commands
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'mileszs/ack.vim'
-
+NeoBundle 'kien/ctrlp.vim'
 " Automatic Helpers
 NeoBundle 'IndexedSearch'
 NeoBundle 'Raimondi/delimitMate'
@@ -70,6 +69,9 @@ NeoBundle 'vim-scripts/DrawIt'
 NeoBundle 'git://fedorapeople.org/home/fedora/wwoods/public_git/vim-scripts.git'
 NeoBundle 'Shougo/vinarise.vim'
 NeoBundle 'ap/vim-css-color'
+NeoBundle 'tpope/vim-markdown'
+NeoBundle 'vim-scripts/SyntaxRange'
+
 " Libraries
 NeoBundle 'L9'
 NeoBundle 'tpope/vim-repeat'
@@ -109,7 +111,7 @@ set encoding=utf-8
 set cindent
 set autoindent
 set smarttab
-set expandtab
+"set expandtab
 set tabstop=2
 set backspace=2
 set shiftwidth=2
@@ -227,11 +229,6 @@ let g:vimfiler_as_default_explorer = 1
 let g:vimfiler_force_overwrite_statusline = 0
 nnoremap <C-n> :VimFilerExplorer<CR>
 
-" ---------------
-" powerline
-" ---------------
-let g:Powerline_symbols = 'unicode'
-let g:Powerline_cache_dir = expand('~/.vim/cache')
 
 " ---------------
 " neocomplete.vim

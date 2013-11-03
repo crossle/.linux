@@ -50,7 +50,7 @@ myWorkspaces = ["1:Term","2:Web","3:Code","4:VM","5:Music","6:Video","7:Chat","8
 --
 myManageHook = composeAll
     [ className =? "Firefox"                  --> doShift "2:Web"
-		, className =? "Google-chrome"            --> doShift "2:Web"
+    , className =? "Chromium-browser"         --> doShift "2:Web"
     , className =? "jetbrains-android-studio" --> doShift "3:Code"
     , className =? "ADT"                      --> doShift "3:Code"
     , className =? "VirtualBox"               --> doShift "4:VM"
