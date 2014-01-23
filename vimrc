@@ -30,7 +30,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'godlygeek/csapprox'
 NeoBundle 'Rykka/colorv.vim'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'bling/vim-airline'
 " Commands
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'tpope/vim-surround'
@@ -42,10 +42,9 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'IndexedSearch'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'scrooloose/syntastic'
+"NeoBundle 'scrooloose/syntastic'
 NeoBundle 'gregsexton/MatchTag'
 NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'majutsushi/tagbar'
@@ -376,3 +375,13 @@ let g:syntastic_c_compiler_options = '-std=c99 -Wall'
 " ---------------
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
+" ---------------
+" airline
+" ---------------
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+let g:airline_linecolumn_prefix = '¶ '
+let g:airline#extensions#branch#symbol = '| '
+let g:airline#extensions#paste#symbol = 'Þ'
+let g:airline#extensions#whitespace#symbol = 'Ξ'

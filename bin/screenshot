@@ -3,4 +3,4 @@
 # Author: Vic Fryzel
 # http://github.com/vicfryzel/xmonad-config
 
-sleep 0.2; scrot -m "$HOME/Pictures/Screenshots/%Y-%m-%d-%H%M%S_\$wx\$h.png" -e "xdg-open \$f"
+sleep 1; scrot -m "$HOME/Pictures/Screenshots/%Y-%m-%d-%H%M%S_\$wx\$h.png" -e "xdg-open \$f"

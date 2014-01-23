@@ -33,7 +33,6 @@ firefox &
 
 # Start IRC client
 pidgin &
-skype &
 
 xcompmgr -c &
 
@@ -42,7 +41,8 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 fcitx -d
-xbacklight -set 30
+xbacklight -set 60
 
-exec ck-launch-session dbus-launch --exit-with-session xmonad
-#exec dbus-launch --sh-syntax --exit-with-session xmonad
+#exec ck-launch-session dbus-launch --sh-syntax --exit-with-session xmonad
+#exec ck-launch-session dbus-launch --exit-with-session xmonad
+exec dbus-launch --sh-syntax --exit-with-session xmonad

@@ -55,10 +55,12 @@ myManageHook = composeAll
     , className =? "ADT"                      --> doShift "3:Code"
     , className =? "VirtualBox"               --> doShift "4:VM"
     , stringProperty "WM_NAME" =? "ncmpc"     --> doShift "5:Music"
+    , className =? "Rhythmbox"                --> doShift "5:Music"
     , className =? "MPlayer"                  --> doShift "6:Video"
     , className =? "Pidgin"                   --> doShift "7:Chat"
     , className =? "Skype"                    --> doShift "7:Chat"
     , className =? "Gimp"                     --> doShift "8:Art"
+    , className =? "Bitcoin-qt"               --> doShift "9:Other"
     , isFullscreen                            --> (doF W.focusDown <+> doFullFloat)]
 
 
