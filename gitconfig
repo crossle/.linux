@@ -6,6 +6,7 @@
 	email = sxm@yixia.com
 [core]
   editor = vim
+	deltaBaseCacheLimit = 1G
 [repack]
   userdeltabaseoffset = true
 [alias]
@@ -29,5 +30,6 @@
   tip = log -1
   m = merge --no-ff
   r = remote -v
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 [push]
 	default = current
