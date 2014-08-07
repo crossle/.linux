@@ -1,2 +1,2 @@
-    sudo apt-get install xmonad rxvt-unicode-256color
+    sudo apt-get install xmonad rxvt-unicode-256color git 
     
