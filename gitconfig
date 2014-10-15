@@ -1,35 +1,39 @@
 [color]
-  ui = auto
-  interactive = auto
+	ui = 1
+	interactive = auto
 [user]
-  name = Crossle Song
-	email = sxm@yixia.com
+	name = Crossle Song
+	email = xming.song@gmail.com
 [core]
-  editor = vim
+	editor = vim
 	deltaBaseCacheLimit = 1G
 [repack]
-  userdeltabaseoffset = true
+	userdeltabaseoffset = true
 [alias]
-  s = status
-  c = commit
-  co = checkout
-  cm = commit -m
-  d = diff
-  a = !git add . && git status
-  au = !git add -u && git status
-  aa = !git add . && git add -u && git status
-  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  ll = log --stat --abbrev-commit
-  b = branch
-  dev = checkout dev
-  ignore = !([ ! -e .gitignore ] && touch .gitignore) | echo $1 >>.gitignore
-  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
-  remove = !git ls-files -z --deleted | xargs -0 git rm
-  amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
-  this = !git init && git add . && git commit -m \"initial commit\"
-  tip = log -1
-  m = merge --no-ff
-  r = remote -v
+	s = status
+	c = commit
+	co = checkout
+	cm = commit -m
+	d = diff
+	a = !git add . && git status
+	au = !git add -u && git status
+	aa = !git add . && git add -u && git status
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	ll = log --stat --abbrev-commit
+	b = branch
+	dev = checkout dev
+	ignore = !([ ! -e .gitignore ] && touch .gitignore) | echo $1 >>.gitignore
+	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
+	remove = !git ls-files -z --deleted | xargs -0 git rm
+	amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
+	this = !git init && git add . && git commit -m \"initial commit\"
+	tip = log -1
+	m = merge --no-ff
+	r = remote -v
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	remotes = remote -v
+	tags = tag -l
 [push]
 	default = current
+[help]
+	autocorrect = 1
