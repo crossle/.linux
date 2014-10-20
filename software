@@ -1,2 +1,5 @@
-    sudo apt-get install xmonad rxvt-unicode-256color git 
-    
+    sudo apt-get install xmonad rxvt-unicode-256color git
+    sudo add-apt-repository ppa:numix/ppa
+    sudo apt-get update
+    sudo apt-get install numix-icon-theme numix-icon-theme-circle numix-icon-theme numix-icon-theme-circle numix-wallpaper-notd
+
